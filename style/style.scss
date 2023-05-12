@@ -1,0 +1,141 @@
+@import "./common/font.scss";
+@import "./common/color.scss";
+
+
+h1 {
+  font-family: "Yantramanav";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 117px;
+}
+
+nav {
+  font-family: "Yantramanav";
+  font-style: normal;
+  font-weight: 900;
+}
+
+a {
+  text-decoration: none;
+}
+
+strong {
+  font-family: "Telex";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1728px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 21px;
+
+  &__nav {
+    display: flex;
+    gap: 110px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__talk {
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      bottom: -2px;
+      left: -3px;
+      right: -3px;
+      background-color: $color-primary;
+    }
+  }
+}
+
+.cover {
+  display: flex;
+  flex-direction: row;
+  margin-top: 228px;
+  margin-bottom: 133px;
+
+  &__cont {
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 35px;
+    }
+
+    .quote {
+      max-width: 522px;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 258px;
+    height: 87px;
+    border: 1px solid $color-primary;
+    border-radius: 37px;
+    margin-top: 122px;
+    margin-left: 71px;
+
+    a {
+      position: relative;
+    }
+
+    a::after {
+      content: "";
+      height: 2px;
+      position: absolute;
+      bottom: -1px;
+      left: -3px;
+      right: -3px;
+      background-color: $color-primary;
+    }
+  }
+
+  &__img {
+    margin-left: auto;
+    margin-right: 13px;
+  }
+
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 82px;
+
+  &__line {
+    display: flex;
+    height: 2px;
+    width: 1497.01px;
+    background-color: $color-tertery;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 23px;
+  }
+}
