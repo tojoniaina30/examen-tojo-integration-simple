@@ -39,6 +39,8 @@ strong {
   justify-content: space-between;
   align-items: center;
   margin-top: 21px;
+  margin-right: 67.5px;
+  margin-left: 73px;
 
   &__nav {
     display: flex;
@@ -69,8 +71,7 @@ strong {
 .cover {
   display: flex;
   flex-direction: row;
-  margin-top: 228px;
-  margin-bottom: 133px;
+  margin: 228px 12px 133px 69px;
 
   &__cont {
     display: flex;
